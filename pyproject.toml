@@ -1,0 +1,10 @@
+[project]
+name = "Synapse-Flask"
+version = "0.1.0"
+description = ""
+authors = ["matheo@paradoxe.tech"]
+requires-python = ">=3.11"
+dependencies = [
+    "flask>=3.1.0",
+    "requests>=2.32.3",
+]
