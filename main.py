@@ -1,11 +1,13 @@
 from flask import Flask, request, jsonify, send_from_directory
 import requests
 import os
+from dotenv import load_dotenv
+
+# retrieve the environment variables from .env
+load_dotenv()
 
 SYNAPSE_API = "https://synapse-api.replit.app/api"
-
-# replace this by your Synapse Application credentials
-CLIENT_ID = "test_app"
+CLIENT_ID = os.getenv("SYNAPSE_ID")
 CLIENT_SECRET = os.getenv("SYNAPSE_SECRET")
 
 app = Flask(__name__)
